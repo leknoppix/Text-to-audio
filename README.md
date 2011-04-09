@@ -1,1 +1,1 @@
-Système qui traduit du texte en audio.
+SystÃ¨me qui traduit du texte en audio.

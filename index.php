@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include('class/parser.php');
 include('class/audio.php');
 /*
