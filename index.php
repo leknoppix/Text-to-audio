@@ -31,9 +31,6 @@ foreach($newtext as $t)
 	$id++;
 	$audio->creation_audio($t,$id);
 }
-echo "<pre>";
-print_r($newtext);
-echo "</pre>";
 $audio->audiofinal($id);
 ?> 
 <object type="application/x-shockwave-flash" data="dewplayer-mini.swf?mp3=final.mp3" width="303" height=113" id="dewplayer-mini">
