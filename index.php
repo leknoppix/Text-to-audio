@@ -25,21 +25,17 @@ L'essentiel, c'est de lire en entier les chapitres dans l'ordre. Après, ça pas
 $parsing = new parser();
 $audio=new audio();
 $newtext = $parsing->coupe($chaine);
-echo "<pre>";
-print_r($newtext);
-echo "</pre>";
-/*$id=0;
+$id=0;
 foreach($newtext as $t)
 {
 	$id++;
 	$audio->creation_audio($t,$id);
 }
-$audio->audiofinal($id);*/
-?><!-- 
-<object type="application/x-shockwave-flash" data="dewplayer-mini.swf?mp3=aide.mp3" width="303" height=113" id="dewplayer-mini">
-<param name="wmode" value="transparent" /><param name="movie" value="dewplayer-mini.swf?mp3=aide.mp3" />
+$audio->audiofinal($id);
+?> 
+<object type="application/x-shockwave-flash" data="dewplayer-mini.swf?mp3=final.mp3" width="303" height=113" id="dewplayer-mini">
+<param name="wmode" value="transparent" /><param name="movie" value="dewplayer-mini.swf?mp3=final.mp3" />
 </object>
-<object type="application/x-shockwave-flash" data="dewplayer-vinyl.swf?mp3=aide.mp3" width="303" height="113" id="dewplayer-mini">
-<param name="wmode" value="transparent" /><param name="movie" value="dewplayer-vinyl.swf?mp3=aide.mp3" />
+<object type="application/x-shockwave-flash" data="dewplayer-vinyl.swf?mp3=final.mp3" width="303" height="113" id="dewplayer-mini">
+<param name="wmode" value="transparent" /><param name="movie" value="dewplayer-vinyl.swf?mp3=final.mp3" />
 </object>
--->
