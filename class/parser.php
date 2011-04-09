@@ -1,13 +1,15 @@
 <?php
 class parser
 {
-	public $nb;
-	public $name;
-	public function __contruct($nb,$name,$lang)
-	{
-		$this->nb=$nb;
-		$this->name=$name;
-	}
+	public $chaine;
+	public $resultat;
 
+	public function coupe($chaine)
+	{
+		$this->chaine=str_replace('\n','',strip_tags(nl2br($chaine)));
+		$this->chaine = wordwrap( $this->chaine, 60 , "\n" );
+		$this->resultat = explode("\n", $this->chaine);
+		return $this->resultat;
+	}
 }
 ?>
