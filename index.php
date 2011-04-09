@@ -18,7 +18,7 @@ include('class/audio.php');
     curl_close($ch);
     */
 $chaine="Blogs, réseaux sociaux, pages d'accueil personnalisables... Depuis quelques années, les sites web ont gagné en fonctionnalités et sont devenus dans le même temps de plus en plus complexes.
-Que le temps de la \"page web perso\" est loin ! Il y a une époque où l'on pouvait se contenter de créer un site basique. Un peu de texte, quelques images : hop là, notre site perso était prêt. :-°
+Que le temps de la \"page web perso\" est loin ! Il y a une époque où l'on pouvait se contenter de créer un site basique. Un peu de texte, quelques images : hop là, notre site perso était prêt.
 Aujourd'hui, c'est différent : il faut que ça bouge ! On s'attend à ce qu'un site soit régulièrement mis à jour : on veut voir des actualités sur la page d'accueil, on veut pouvoir les commenter, discuter sur des forums, bref, participer à la vie du site.
 Le langage PHP a justement été conçu pour créer des sites \"vivants\" (on parle de sites dynamiques). Et si vous voulez apprendre à créer vous aussi des sites web dynamiques, c'est votre jour de chance : vous êtes sur un cours pour vrais débutants en PHP !
 L'essentiel, c'est de lire en entier les chapitres dans l'ordre. Après, ça passe tout seul et vous vous étonnerez bientôt de ce que vous êtes capable de faire ! ";
@@ -31,6 +31,9 @@ foreach($newtext as $t)
 	$id++;
 	$audio->creation_audio($t,$id);
 }
+echo "<pre>";
+print_r($newtext);
+echo "</pre>";
 $audio->audiofinal($id);
 ?> 
 <object type="application/x-shockwave-flash" data="dewplayer-mini.swf?mp3=final.mp3" width="303" height=113" id="dewplayer-mini">
