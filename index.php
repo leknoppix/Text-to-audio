@@ -1,15 +1,4 @@
-<?php
-class parser
-{
-	public $nb;
-	public $name;
-	public function __contruct($nb,$name,$lang)
-	{
-		$this->nb=$nb;
-		$this->name=$name;
-	}
-
-}
+﻿<?php
     $string = urlencode("Bienvenu à la Mairie de Mirande");
     $ch = curl_init();
 	$lang='es';
